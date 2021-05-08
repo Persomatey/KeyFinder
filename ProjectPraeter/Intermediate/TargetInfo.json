@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "ProjectPraeter",
-			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeter.Target.cs",
+			"Path": "C:\\Users\\hunte\\Documents\\GitHub\\ProjectPraeter\\ProjectPraeter\\Source\\ProjectPraeter.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "ProjectPraeterEditor",
-			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeterEditor.Target.cs",
+			"Path": "C:\\Users\\hunte\\Documents\\GitHub\\ProjectPraeter\\ProjectPraeter\\Source\\ProjectPraeterEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

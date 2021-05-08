@@ -1,2 +1,2 @@
-C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\Definitions.ProjectPraeter.h
-C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Source\ProjectPraeter\ProjectPraeter.h
+C:\Users\hunte\Documents\GitHub\ProjectPraeter\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\Definitions.ProjectPraeter.h
+C:\Users\hunte\Documents\GitHub\ProjectPraeter\ProjectPraeter\Source\ProjectPraeter\ProjectPraeter.h
