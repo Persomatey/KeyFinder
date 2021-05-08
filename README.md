@@ -24,6 +24,27 @@ https://visualstudio.microsoft.com/vs/community/
 ## Changelist 
 
 <details>
+	<summary>CL-000001</summary>
+
+	- Made the following changes: 
+		- Changed the level somewhat 
+			- Added some platforming challenges and some soft collisions 
+		- Made a Soft Collision 
+			- You can land on a soft collision 
+			- You can jump up through a soft collision 
+			- You can hold the Shift key and press the S key to fall through a soft collision 
+		- Made it so that when the player falls the falling animation will play 
+			- Even if the player didn't jump first 
+		- Added falling sprites 
+		- Edited the falling animation so that it plays the falling sprites 
+		- Removed the StarterContend folder 
+			- Wasn't going to use any of it anyways 
+		- Changed the folder structure a little bit 
+
+</details>
+
+
+<details>
 	<summary>CL-000000</summary>
 
 	- Made the following changes: 

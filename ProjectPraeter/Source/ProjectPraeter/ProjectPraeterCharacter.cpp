@@ -86,7 +86,11 @@ void AProjectPraeterCharacter::UpdateAnimation()
 	UPaperFlipbook* DesiredAnimation; 
 	DesiredAnimation = NULL;
 
-	if (!isJumping && PlayerSpeedHoriz != 0.0f)
+	if (PlayerSpeedVert < 0.0f)
+	{
+	DesiredAnimation = FallingAnimation;
+	}
+	else if (!isJumping && PlayerSpeedHoriz != 0.0f)
 	{
 		DesiredAnimation = RunningAnimation;
 	}
@@ -97,10 +101,6 @@ void AProjectPraeterCharacter::UpdateAnimation()
 	else if (isJumping && PlayerSpeedVert > 0.0f)
 	{
 		DesiredAnimation = JumpingAnimation;
-	}
-	else if (isJumping && PlayerSpeedVert < 0.0f)
-	{
-		DesiredAnimation = FallingAnimation; 
 	}
 	else if (isJumping && PlayerSpeedVert == 0.0f)
 	{

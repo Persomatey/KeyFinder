@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\hunte\\Documents\\GitHub\\ProjectPraeter\\ProjectPraeter\\Source\\ProjectPraeter\\ProjectPraeter.Build.cs",
-		"C:\\Users\\hunte\\Documents\\GitHub\\ProjectPraeter\\ProjectPraeter\\Source\\ProjectPraeter.Target.cs",
-		"C:\\Users\\hunte\\Documents\\GitHub\\ProjectPraeter\\ProjectPraeter\\Source\\ProjectPraeterEditor.Target.cs"
+		"C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeter\\ProjectPraeter.Build.cs",
+		"C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeter.Target.cs",
+		"C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeterEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.4"
 }
