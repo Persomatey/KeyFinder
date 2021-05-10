@@ -28,6 +28,17 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
+	<summary>CL-000004 (The Menus Update)</summary>
+
+		- Made the following changes: 
+		- Added Controls Menu 
+		- Added Credits Menu 
+		- Added Main Menu 
+		- Edited the README to reflect the above changes 
+
+</details>
+
+<details>
 	<summary>CL-000003 (The Death Update)</summary>
 
 	- Made the following changes: 
@@ -59,7 +70,6 @@ https://trello.com/b/rSKdAI03/project-praeter
 				- Desktop button 
 					- Closes the app 
 		- Edited the README to reflect the above changes 
-
 
 </details>
 
@@ -93,7 +103,6 @@ https://trello.com/b/rSKdAI03/project-praeter
 		- Added Comixtrash to the credits section of the README 
 		- Added a link to the Trello board the Specs section of the README 
 		- Edited the README to reflect the above changes 
-
 
 </details>
 
