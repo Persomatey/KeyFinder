@@ -86,11 +86,15 @@ void AProjectPraeterCharacter::UpdateAnimation()
 	UPaperFlipbook* DesiredAnimation; 
 	DesiredAnimation = NULL;
 
-	if (playerIsAttacking)
+	if (isDead)
+	{
+		DesiredAnimation = DeathAnimation;
+	}
+	else if (playerIsAttacking)
 	{
 		DesiredAnimation = AttackAnimation;
 	}
-	if (takingDamage)
+	else if (takingDamage)
 	{
 		DesiredAnimation = HurtAnimation;
 	}
@@ -154,9 +158,12 @@ void AProjectPraeterCharacter::MoveRight(float Value)
 	/*UpdateChar();*/
 
 	// Apply the input to the character motion
-	if (!playerIsAttacking)
+	if (!isDead)
 	{
-		AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
+		if (!playerIsAttacking)
+		{
+			AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
+		}
 	}
 }
 
@@ -200,16 +207,11 @@ void AProjectPraeterCharacter::TakeDamage()
 	takingDamage = true; 
 
 	
-	if (health < 0)
+	if (health <= 0)
 	{
 		health = 0; 
 		PlayerDeath(); 
 	}
-}
-
-void AProjectPraeterCharacter::PlayerDeath()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Player has died! =("));
 }
 
 void AProjectPraeterCharacter::PlayerAttack()

@@ -26,6 +26,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execHealPlayer);
 
 
+#define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_EVENT_PARMS
+#define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_CALLBACK_WRAPPERS
 #define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProjectPraeterCharacter(); \
@@ -77,19 +79,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProjectPraeterCharacter); \
 	FORCEINLINE static uint32 __PPO__FallingAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, FallingAnimation); } \
 	FORCEINLINE static uint32 __PPO__AttackAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, AttackAnimation); } \
 	FORCEINLINE static uint32 __PPO__HurtAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, HurtAnimation); } \
+	FORCEINLINE static uint32 __PPO__DeathAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, DeathAnimation); } \
 	FORCEINLINE static uint32 __PPO__isJumping() { return STRUCT_OFFSET(AProjectPraeterCharacter, isJumping); } \
 	FORCEINLINE static uint32 __PPO__health() { return STRUCT_OFFSET(AProjectPraeterCharacter, health); } \
 	FORCEINLINE static uint32 __PPO__takingDamage() { return STRUCT_OFFSET(AProjectPraeterCharacter, takingDamage); } \
+	FORCEINLINE static uint32 __PPO__isDead() { return STRUCT_OFFSET(AProjectPraeterCharacter, isDead); } \
 	FORCEINLINE static uint32 __PPO__playerIsAttacking() { return STRUCT_OFFSET(AProjectPraeterCharacter, playerIsAttacking); }
 
 
-#define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_17_PROLOG
+#define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_17_PROLOG \
+	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_EVENT_PARMS
+
+
 #define ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_PRIVATE_PROPERTY_OFFSET \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_SPARSE_DATA \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_RPC_WRAPPERS \
+	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_CALLBACK_WRAPPERS \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_INCLASS \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_STANDARD_CONSTRUCTORS \
 public: \
@@ -102,6 +110,7 @@ public: \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_PRIVATE_PROPERTY_OFFSET \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_SPARSE_DATA \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_CALLBACK_WRAPPERS \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_INCLASS_NO_PURE_DECLS \
 	ProjectPraeter_Source_ProjectPraeter_ProjectPraeterCharacter_h_20_ENHANCED_CONSTRUCTORS \
 private: \

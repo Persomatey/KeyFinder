@@ -28,6 +28,42 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
+	<summary>CL-000003 (The Death Update)</summary>
+
+	- Made the following changes: 
+		- Fixed bug where enemies would sometimes go flying and take extra damage if the player was running while attacking 
+		- Added the player's death sprites 
+		- Added player death system 
+			- When the player's health reaches 0, the player's death will trigger: 
+				- The player's death animation will play 
+				- The camera will zoom in on them slightly 
+				- The world will pause and the death screen will appear 
+					- The death screen has three options: 
+						- Retry 
+							- Reloads the level 
+						- Main Menu button 
+							- Currently non-functioning 
+						- Deakstop  button 
+							- Closes the app 
+		- Made a health pickup 
+			- Activated when the player walks up to it 
+				- The player will get healed by one heart 
+				- Then it will be destroyed 
+		- Created the Pause Menu 
+			- The player can press the 'Esc." or 'P' keys to pause the game 
+			- The menu has three buttons 
+				- Continue button
+					- Continues the game when pressed 
+				- Main Menu button 
+					- Currently non-functioning 
+				- Desktop button 
+					- Closes the app 
+		- Edited the README to reflect the above changes 
+
+
+</details>
+
+<details>
 	<summary>CL-000002 (The Enemy Update)</summary>
 
 	- Made the following changes: 

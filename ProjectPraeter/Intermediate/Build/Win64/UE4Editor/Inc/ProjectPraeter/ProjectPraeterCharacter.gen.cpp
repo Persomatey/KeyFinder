@@ -36,6 +36,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		P_THIS->HealPlayer(Z_Param_amount);
 		P_NATIVE_END;
 	}
+	static FName NAME_AProjectPraeterCharacter_PlayerDeath = FName(TEXT("PlayerDeath"));
+	void AProjectPraeterCharacter::PlayerDeath()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AProjectPraeterCharacter_PlayerDeath),NULL);
+	}
 	void AProjectPraeterCharacter::StaticRegisterNativesAProjectPraeterCharacter()
 	{
 		UClass* Class = AProjectPraeterCharacter::StaticClass();
@@ -74,6 +79,28 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProjectPraeterCharacter_HealPlayer_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectPraeterCharacter, nullptr, "PlayerDeath", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -116,6 +143,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		static void NewProp_playerIsAttacking_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_playerIsAttacking;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isDead_MetaData[];
+#endif
+		static void NewProp_isDead_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isDead;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_takingDamage_MetaData[];
 #endif
 		static void NewProp_takingDamage_SetBit(void* Obj);
@@ -129,6 +161,10 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 #endif
 		static void NewProp_isJumping_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isJumping;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathAnimation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeathAnimation;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HurtAnimation_MetaData[];
 #endif
@@ -171,6 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectPraeterCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AProjectPraeterCharacter_HealPlayer, "HealPlayer" }, // 387599842
+		{ &Z_Construct_UFunction_AProjectPraeterCharacter_PlayerDeath, "PlayerDeath" }, // 2216743130
 		{ &Z_Construct_UFunction_AProjectPraeterCharacter_TakeDamage, "TakeDamage" }, // 3845374448
 	};
 #if WITH_METADATA
@@ -193,6 +230,17 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		((AProjectPraeterCharacter*)Obj)->playerIsAttacking = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_playerIsAttacking = { "playerIsAttacking", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectPraeterCharacter), &Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_playerIsAttacking_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_playerIsAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_playerIsAttacking_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead_MetaData[] = {
+		{ "Category", "ProjectPraeterCharacter" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead_SetBit(void* Obj)
+	{
+		((AProjectPraeterCharacter*)Obj)->isDead = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead = { "isDead", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectPraeterCharacter), &Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takingDamage_MetaData[] = {
 		{ "Category", "ProjectPraeterCharacter" },
@@ -222,6 +270,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		((AProjectPraeterCharacter*)Obj)->isJumping = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping = { "isJumping", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectPraeterCharacter), &Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation_MetaData[] = {
+		{ "Category", "Animations" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation = { "DeathAnimation", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, DeathAnimation), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_HurtAnimation_MetaData[] = {
 		{ "Category", "Animations" },
@@ -284,9 +339,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_SideViewCameraComponent = { "SideViewCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, SideViewCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_SideViewCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_SideViewCameraComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectPraeterCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_playerIsAttacking,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isDead,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takingDamage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_health,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_HurtAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_AttackAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_FallingAnimation,
@@ -323,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectPraeterCharacter, 4178289599);
+	IMPLEMENT_CLASS(AProjectPraeterCharacter, 328472833);
 	template<> PROJECTPRAETER_API UClass* StaticClass<AProjectPraeterCharacter>()
 	{
 		return AProjectPraeterCharacter::StaticClass();

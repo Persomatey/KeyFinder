@@ -48,6 +48,9 @@ class AProjectPraeterCharacter : public APaperCharacter
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
 			class UPaperFlipbook* HurtAnimation;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+			class UPaperFlipbook* DeathAnimation;
+
 		void UpdateAnimation();	// Called to choose the correct animation to play based on the character's movement state
 
 		void MoveRight(float Value); // Called for side to side input 
@@ -79,7 +82,11 @@ class AProjectPraeterCharacter : public APaperCharacter
 		UPROPERTY(EditAnywhere, BlueprintReadWrite)
 			bool takingDamage; 
 
-		void PlayerDeath(); 
+		UFUNCTION(BlueprintImplementableEvent)
+			void PlayerDeath();
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+			bool isDead; 
 
 		void PlayerAttack(); 
 
