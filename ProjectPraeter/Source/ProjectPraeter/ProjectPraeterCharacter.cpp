@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #include "ProjectPraeterCharacter.h"
 #include "PaperFlipbookComponent.h"
 #include "Components/TextRenderComponent.h"
@@ -73,6 +71,8 @@ AProjectPraeterCharacter::AProjectPraeterCharacter()
 	bReplicates = true;
 
 	isJumping = false; 
+	health = 3; 
+	maxHealth = 3; 
 }
 
 void AProjectPraeterCharacter::UpdateAnimation()
@@ -86,23 +86,31 @@ void AProjectPraeterCharacter::UpdateAnimation()
 	UPaperFlipbook* DesiredAnimation; 
 	DesiredAnimation = NULL;
 
-	if (PlayerSpeedVert < 0.0f)
+	if (playerIsAttacking)
 	{
-	DesiredAnimation = FallingAnimation;
+		DesiredAnimation = AttackAnimation;
 	}
-	else if (!isJumping && PlayerSpeedHoriz != 0.0f)
+	if (takingDamage)
+	{
+		DesiredAnimation = HurtAnimation;
+	}
+	else if (!takingDamage && !playerIsAttacking && PlayerSpeedVert < 0.0f)
+	{
+		DesiredAnimation = FallingAnimation;
+	}
+	else if (!takingDamage && !playerIsAttacking && !isJumping && PlayerSpeedHoriz != 0.0f)
 	{
 		DesiredAnimation = RunningAnimation;
 	}
-	else if (!isJumping && PlayerSpeedHoriz == 0.0f)
+	else if (!takingDamage && !playerIsAttacking && !isJumping && PlayerSpeedHoriz == 0.0f)
 	{
 		DesiredAnimation = IdleAnimation;
 	}
-	else if (isJumping && PlayerSpeedVert > 0.0f)
+	else if (!takingDamage && !playerIsAttacking && isJumping && PlayerSpeedVert > 0.0f)
 	{
 		DesiredAnimation = JumpingAnimation;
 	}
-	else if (isJumping && PlayerSpeedVert == 0.0f)
+	else if (!takingDamage && !playerIsAttacking && isJumping && PlayerSpeedVert == 0.0f)
 	{
 		isJumping = false; 
 	}
@@ -125,6 +133,7 @@ void AProjectPraeterCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	// Note: the 'Jump' action and the 'MoveRight' axis are bound to actual keys/buttons/sticks in DefaultInput.ini (editable from Project Settings..Input)
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AProjectPraeterCharacter::HunterJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Attack", IE_Released, this, &AProjectPraeterCharacter::PlayerAttack);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AProjectPraeterCharacter::MoveRight);
 
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AProjectPraeterCharacter::TouchStarted);
@@ -133,17 +142,22 @@ void AProjectPraeterCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void AProjectPraeterCharacter::HunterJump()
 {
-	isJumping = true; 
-	ACharacter::Jump(); 
+	if (!playerIsAttacking)
+	{
+		isJumping = true;
+		ACharacter::Jump();
+	}
 }
-
 
 void AProjectPraeterCharacter::MoveRight(float Value)
 {
 	/*UpdateChar();*/
 
 	// Apply the input to the character motion
-	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
+	if (!playerIsAttacking)
+	{
+		AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
+	}
 }
 
 void AProjectPraeterCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
@@ -167,7 +181,7 @@ void AProjectPraeterCharacter::UpdateCharacter()
 	const FVector PlayerVelocity = GetVelocity();	
 	float TravelDirection = PlayerVelocity.X;
 	// Set the rotation so that the character faces his direction of travel.
-	if (Controller != nullptr)
+	if (Controller != nullptr && !takingDamage)
 	{
 		if (TravelDirection < 0.0f)
 		{
@@ -177,5 +191,51 @@ void AProjectPraeterCharacter::UpdateCharacter()
 		{
 			Controller->SetControlRotation(FRotator(0.0f, 0.0f, 0.0f));
 		}
+	}
+}
+
+void AProjectPraeterCharacter::TakeDamage()
+{
+	health -= 1; 
+	takingDamage = true; 
+
+	
+	if (health < 0)
+	{
+		health = 0; 
+		PlayerDeath(); 
+	}
+}
+
+void AProjectPraeterCharacter::PlayerDeath()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Player has died! =("));
+}
+
+void AProjectPraeterCharacter::PlayerAttack()
+{
+	if (!isJumping)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Attack!"));
+		playerIsAttacking = true;
+	}
+
+	//UPaperFlipbook* DesiredAnimation;
+
+	//DesiredAnimation = AttackAnimation;
+
+	//if (GetSprite()->GetFlipbook() != DesiredAnimation)
+	//{
+	//	GetSprite()->SetFlipbook(DesiredAnimation);
+	//}
+}
+
+void AProjectPraeterCharacter::HealPlayer(int amount)
+{
+	health += amount; 
+	
+	if (health > maxHealth)
+	{
+		health = maxHealth;
 	}
 }

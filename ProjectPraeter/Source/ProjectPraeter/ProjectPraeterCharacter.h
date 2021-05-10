@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -44,6 +42,12 @@ class AProjectPraeterCharacter : public APaperCharacter
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
 			class UPaperFlipbook* FallingAnimation;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+			class UPaperFlipbook* AttackAnimation;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+			class UPaperFlipbook* HurtAnimation;
+
 		void UpdateAnimation();	// Called to choose the correct animation to play based on the character's movement state
 
 		void MoveRight(float Value); // Called for side to side input 
@@ -60,6 +64,27 @@ class AProjectPraeterCharacter : public APaperCharacter
 		void TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location);
 
 		virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+			int health;
+
+		int maxHealth; 
+
+		UFUNCTION(BlueprintCallable)
+			void HealPlayer(int amount);
+
+		UFUNCTION(BlueprintCallable)
+			void TakeDamage(); 
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+			bool takingDamage; 
+
+		void PlayerDeath(); 
+
+		void PlayerAttack(); 
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+			bool playerIsAttacking; 
 
 	public:
 
