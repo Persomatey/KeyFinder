@@ -18,9 +18,11 @@ https://trello.com/b/rSKdAI03/project-praeter
 - [Hunter Goodin](https://huntergoodin.com/)
 
 **Art**
+- [Hunter Goodin](https://huntergoodin.com/)
 - [rvros](https://rvros.itch.io/)
 - [Trixie](https://trixelized.itch.io/)
 - [Comixtrash](https://comixtrash.itch.io/) 
+- [kaleb-silva](https://www.freepik.com/kaleb-silva) 
 
 **Animation**
 - [rvros](https://rvros.itch.io/)
@@ -28,9 +30,23 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
+	<summary>CL-000005 (The End Game Update)</summary>
+
+	- Made the following changes: 
+		- Created the end game conditions 
+			- To win the game, the player has to do the following: 
+				- Collect all 3 keys 
+				- Once the player has all 3 keys, the player must go to the house 
+				- Once the player touches the house with all 3 keys, they win the game 
+		- Added the count of keys that the player has collected to the HUD in the lower right corner 
+		- Edited the README to reflect the above changes 
+
+</details>
+
+<details>
 	<summary>CL-000004 (The Menus Update)</summary>
 
-		- Made the following changes: 
+	- Made the following changes: 
 		- Added Controls Menu 
 		- Added Credits Menu 
 		- Added Main Menu 
