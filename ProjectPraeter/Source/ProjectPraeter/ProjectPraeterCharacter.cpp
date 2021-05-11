@@ -6,6 +6,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "Kismet/GameplayStatics.h"
 #include "Camera/CameraComponent.h"
 
 DEFINE_LOG_CATEGORY_STATIC(SideScrollerCharacter, Log, All);
@@ -149,6 +150,7 @@ void AProjectPraeterCharacter::HunterJump()
 	if (!playerIsAttacking)
 	{
 		isJumping = true;
+		UGameplayStatics::PlaySoundAtLocation(this, jumpSFX, GetActorLocation());
 		ACharacter::Jump();
 	}
 }
@@ -205,7 +207,7 @@ void AProjectPraeterCharacter::TakeDamage()
 {
 	health -= 1; 
 	takingDamage = true; 
-
+	UGameplayStatics::PlaySoundAtLocation(this, takeDamageSFX, GetActorLocation());
 	
 	if (health <= 0)
 	{
@@ -219,17 +221,9 @@ void AProjectPraeterCharacter::PlayerAttack()
 	if (!isJumping)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Attack!"));
+		UGameplayStatics::PlaySoundAtLocation(this, attackSFX, GetActorLocation());
 		playerIsAttacking = true;
 	}
-
-	//UPaperFlipbook* DesiredAnimation;
-
-	//DesiredAnimation = AttackAnimation;
-
-	//if (GetSprite()->GetFlipbook() != DesiredAnimation)
-	//{
-	//	GetSprite()->SetFlipbook(DesiredAnimation);
-	//}
 }
 
 void AProjectPraeterCharacter::HealPlayer(int amount)

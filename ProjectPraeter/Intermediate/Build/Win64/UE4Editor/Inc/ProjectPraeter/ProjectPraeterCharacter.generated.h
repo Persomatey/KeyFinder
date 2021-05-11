@@ -80,6 +80,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProjectPraeterCharacter); \
 	FORCEINLINE static uint32 __PPO__AttackAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, AttackAnimation); } \
 	FORCEINLINE static uint32 __PPO__HurtAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, HurtAnimation); } \
 	FORCEINLINE static uint32 __PPO__DeathAnimation() { return STRUCT_OFFSET(AProjectPraeterCharacter, DeathAnimation); } \
+	FORCEINLINE static uint32 __PPO__attackSFX() { return STRUCT_OFFSET(AProjectPraeterCharacter, attackSFX); } \
+	FORCEINLINE static uint32 __PPO__takeDamageSFX() { return STRUCT_OFFSET(AProjectPraeterCharacter, takeDamageSFX); } \
+	FORCEINLINE static uint32 __PPO__jumpSFX() { return STRUCT_OFFSET(AProjectPraeterCharacter, jumpSFX); } \
+	FORCEINLINE static uint32 __PPO__landSFX() { return STRUCT_OFFSET(AProjectPraeterCharacter, landSFX); } \
 	FORCEINLINE static uint32 __PPO__isJumping() { return STRUCT_OFFSET(AProjectPraeterCharacter, isJumping); } \
 	FORCEINLINE static uint32 __PPO__health() { return STRUCT_OFFSET(AProjectPraeterCharacter, health); } \
 	FORCEINLINE static uint32 __PPO__takingDamage() { return STRUCT_OFFSET(AProjectPraeterCharacter, takingDamage); } \

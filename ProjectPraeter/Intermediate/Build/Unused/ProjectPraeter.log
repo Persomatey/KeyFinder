@@ -1,15 +1,15 @@
 ﻿  Building ProjectPraeterEditor...
   Using Visual Studio 2019 14.28.29337 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 12 processes...
-    [1/4] ProjectPraeterCharacter.cpp
-C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Source\ProjectPraeter\ProjectPraeterCharacter.h(80): warning C4263: 'void AProjectPraeterCharacter::TakeDamage(void)': member function does not override any base class virtual member function
-C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Source\ProjectPraeter\ProjectPraeterCharacter.h(103): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'APawn'; function is hidden
+    [1/4] DefaultEnemy.cpp
+C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Source\ProjectPraeter\DefaultEnemy.h(64): warning C4263: 'void ADefaultEnemy::TakeDamage(void)': member function does not override any base class virtual member function
+C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Source\ProjectPraeter\DefaultEnemy.h(71): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'APawn'; function is hidden
     C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: see declaration of 'APawn::TakeDamage'
     C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h(24): note: see declaration of 'APawn'
-    [2/4] UE4Editor-ProjectPraeter-0186.lib
-       Creating library C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0186.lib and object C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0186.exp
-    [3/4] UE4Editor-ProjectPraeter-0186.dll
-       Creating library C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0186.suppressed.lib and object C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0186.suppressed.exp
+    [2/4] UE4Editor-ProjectPraeter-0202.lib
+       Creating library C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0202.lib and object C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0202.exp
+    [3/4] UE4Editor-ProjectPraeter-0202.dll
+       Creating library C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0202.suppressed.lib and object C:\Users\hunte\Documents\Unreal Projects\ProjectPraeter\Intermediate\Build\Win64\UE4Editor\Development\ProjectPraeter\UE4Editor-ProjectPraeter-0202.suppressed.exp
     [4/4] ProjectPraeterEditor.target
-  Total time in Parallel executor: 1.35 seconds
-  Total execution time: 1.81 seconds
+  Total time in Parallel executor: 1.15 seconds
+  Total execution time: 1.62 seconds

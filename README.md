@@ -27,7 +27,32 @@ https://trello.com/b/rSKdAI03/project-praeter
 **Animation**
 - [rvros](https://rvros.itch.io/)
 
+**Music**
+- [VGcomposer](https://assetstore.unity.com/publishers/27795)
+
+**SFX**
+- [Hunter Goodin](https://huntergoodin.com/)
+- [Chris M Audio](https://assetstore.unity.com/publishers/4861)
+- [ZapSplat](https://www.zapsplat.com/)
+- [VGcomposer](https://assetstore.unity.com/publishers/27795)
+- [MGWSoundDesign](https://assetstore.unity.com/publishers/27115)
+- [InspectorJ Sound Effects](https://assetstore.unity.com/publishers/38635) playerAttack1-2 or - [ShapeForms](https://assetstore.unity.com/publishers/40210)
+
 ## Changelist 
+
+<details>
+	<summary>CL-000006 (The Audio Update)</summary>
+
+	- Made the following changes: 
+		- Created the end game conditions 
+			- To win the game, the player has to do the following: 
+				- Collect all 3 keys 
+				- Once the player has all 3 keys, the player must go to the house 
+				- Once the player touches the house with all 3 keys, they win the game 
+		- Added the count of keys that the player has collected to the HUD in the lower right corner 
+		- Edited the README to reflect the above changes 
+
+</details>
 
 <details>
 	<summary>CL-000005 (The End Game Update)</summary>

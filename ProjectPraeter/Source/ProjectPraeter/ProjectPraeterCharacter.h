@@ -30,6 +30,8 @@ class AProjectPraeterCharacter : public APaperCharacter
 
 	protected:
 
+		// Animations 
+
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Animations)
 			class UPaperFlipbook* RunningAnimation;
 
@@ -51,9 +53,25 @@ class AProjectPraeterCharacter : public APaperCharacter
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
 			class UPaperFlipbook* DeathAnimation;
 
-		void UpdateAnimation();	// Called to choose the correct animation to play based on the character's movement state
+		// Sound Effects 
 
-		void MoveRight(float Value); // Called for side to side input 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+			class USoundBase* attackSFX;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+			class USoundBase* takeDamageSFX; 
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+			class USoundBase* jumpSFX;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+			class USoundBase* landSFX;
+
+		// Functions 
+
+		void UpdateAnimation();	
+
+		void MoveRight(float Value); 
 
 		void HunterJump(); 
 

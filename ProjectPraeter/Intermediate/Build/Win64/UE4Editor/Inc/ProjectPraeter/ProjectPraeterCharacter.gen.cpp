@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 	PROJECTPRAETER_API UClass* Z_Construct_UClass_AProjectPraeterCharacter();
 	PAPER2D_API UClass* Z_Construct_UClass_APaperCharacter();
 	UPackage* Z_Construct_UPackage__Script_ProjectPraeter();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -162,6 +163,22 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		static void NewProp_isJumping_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isJumping;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_landSFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_landSFX;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_jumpSFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_jumpSFX;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_takeDamageSFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_takeDamageSFX;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_attackSFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_attackSFX;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathAnimation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeathAnimation;
@@ -271,6 +288,36 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping = { "isJumping", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AProjectPraeterCharacter), &Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_SetBit, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_landSFX_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_landSFX = { "landSFX", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, landSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_landSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_landSFX_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_jumpSFX_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_jumpSFX = { "jumpSFX", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, jumpSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_jumpSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_jumpSFX_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takeDamageSFX_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takeDamageSFX = { "takeDamageSFX", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, takeDamageSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takeDamageSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takeDamageSFX_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_attackSFX_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "Comment", "// Sound Effects \n" },
+		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+		{ "ToolTip", "Sound Effects" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_attackSFX = { "attackSFX", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, attackSFX), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_attackSFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_attackSFX_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation_MetaData[] = {
 		{ "Category", "Animations" },
 		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
@@ -315,7 +362,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_RunningAnimation_MetaData[] = {
 		{ "Category", "Animations" },
+		{ "Comment", "// Animations \n" },
 		{ "ModuleRelativePath", "ProjectPraeterCharacter.h" },
+		{ "ToolTip", "Animations" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_RunningAnimation = { "RunningAnimation", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectPraeterCharacter, RunningAnimation), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_RunningAnimation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_RunningAnimation_MetaData)) };
@@ -343,6 +392,10 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takingDamage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_health,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_isJumping,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_landSFX,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_jumpSFX,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_takeDamageSFX,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_attackSFX,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_DeathAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_HurtAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectPraeterCharacter_Statics::NewProp_AttackAnimation,
@@ -380,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectPraeterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectPraeterCharacter, 328472833);
+	IMPLEMENT_CLASS(AProjectPraeterCharacter, 1786795752);
 	template<> PROJECTPRAETER_API UClass* StaticClass<AProjectPraeterCharacter>()
 	{
 		return AProjectPraeterCharacter::StaticClass();
