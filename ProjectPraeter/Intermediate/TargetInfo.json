@@ -1,13 +1,13 @@
 {
 	"Targets": [
 		{
-			"Name": "ProjectPraeter",
-			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeter.Target.cs",
+			"Name": "KeyFinder",
+			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\KeyFinder.Target.cs",
 			"Type": "Game"
 		},
 		{
-			"Name": "ProjectPraeterEditor",
-			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\ProjectPraeterEditor.Target.cs",
+			"Name": "KeyFinderEditor",
+			"Path": "C:\\Users\\hunte\\Documents\\Unreal Projects\\ProjectPraeter\\Source\\KeyFinderEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

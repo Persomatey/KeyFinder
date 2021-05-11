@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\KeyFinder.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{A1B3842D-C0B0-47C8-8D3F-F709E915E4FF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KeyFinder.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\KeyFinderEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{97426DB2-1C97-481F-89D6-535523AB49AE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\KeyFinder">
+      <UniqueIdentifier>{98C8B417-B77E-4384-9618-0B6CF96FFC4C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KeyFinder\DefaultEnemy.cpp">
+      <Filter>Source\KeyFinder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeyFinder\DefaultEnemy.h">
+      <Filter>Source\KeyFinder</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\KeyFinder\KeyFinder.Build.cs">
+      <Filter>Source\KeyFinder</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\KeyFinder\KeyFinder.cpp">
+      <Filter>Source\KeyFinder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeyFinder\KeyFinder.h">
+      <Filter>Source\KeyFinder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\KeyFinder\ProjectPraeterCharacter.cpp">
+      <Filter>Source\KeyFinder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeyFinder\ProjectPraeterCharacter.h">
+      <Filter>Source\KeyFinder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\KeyFinder\ProjectPraeterGameMode.cpp">
+      <Filter>Source\KeyFinder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KeyFinder\ProjectPraeterGameMode.h">
+      <Filter>Source\KeyFinder</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -41,6 +41,20 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
+	<summary>CL-000007 (The Builds Update)</summary>
+
+	- Made the following changes: 
+		- Cleaned up the art for the level 
+			- Added grass, etx 
+		- Renamed the project 
+			- Key Finder 
+		- Changed the executable image to the graphic art 
+		- Added a Graphic Art folder with the files for the graphic art for the game 
+		- Edited the README to reflect the above changes 
+
+</details>
+
+<details>
 	<summary>CL-000006 (The Audio Update)</summary>
 
 	- Made the following changes: 
