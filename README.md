@@ -1,4 +1,4 @@
-# ProjectPraeter
+# Key Finder
 
 *A Basic 2D Platformer*
 
