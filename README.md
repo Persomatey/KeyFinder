@@ -41,6 +41,16 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
+	<summary>CL-000008 (The Quality Assurance Update)</summary>
+
+	- Made the following changes: 
+		- Fixed transparencies on the keyboard keys in the Controls menu 
+		- Made it so that both L and X can be used as attack keys 
+		- Edited the README to reflect the above changes 
+
+</details>
+
+<details>
 	<summary>CL-000007 (The Builds Update)</summary>
 
 	- Made the following changes: 
