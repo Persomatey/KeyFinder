@@ -29,16 +29,19 @@
 !/ProjectPraeter/DerivedDataCache/**
 !/ProjectPraeter/FileSources/**
 
-!/ProjectPraeter/Intermediate/AssetRegistryCache/**
-!/ProjectPraeter/Intermediate/Plugins**
-!/ProjectPraeter/Intermediate/ProjectFiles/**
-!/ProjectPraeter/Intermediate/ReimportCache/**
-!/ProjectPraeter/Intermediate/Staging/**
-!/ProjectPraeter/Intermediate/CachedAssetRegistry.bin**
-!/ProjectPraeter/Intermediate/TargetInfo.json**
+#!/ProjectPraeter/Intermediate/AssetRegistryCache/**
+#!/ProjectPraeter/Intermediate/Plugins**
+#!/ProjectPraeter/Intermediate/ProjectFiles/**
+#!/ProjectPraeter/Intermediate/ReimportCache/**
+#!/ProjectPraeter/Intermediate/Staging/**
+#!/ProjectPraeter/Intermediate/CachedAssetRegistry.bin**
+#!/ProjectPraeter/Intermediate/TargetInfo.json**
 
-!/ProjectPraeter/ProjectPraeter.sln**
-!/ProjectPraeter/ProjectPraeter.uproject**
+#!/ProjectPraeter/Saved/**
+!/ProjectPraeter/Source/**
+
+!/ProjectPraeter/KeyFinder.sln**
+!/ProjectPraeter/KeyFinder.uproject**
 
 !/GraphicArt/**
 !/LevelDesignAndScript/**
