@@ -45,7 +45,17 @@ https://trello.com/b/rSKdAI03/project-praeter
 ## Changelist 
 
 <details>
-	<summary>CL-000008 (The Quality Assurance Update)</summary>
+	<summary>CL-000009 (The Quality Assurance Update (Part 2))</summary>
+
+	- Made the following changes: 
+		- Fixed how the game would load from the level by default instead of the Main Menu 
+		- Change the title on the main menu from 'Project: Praeter' to 'Key Finder' 
+		- Edited the README to reflect the above changes 
+
+</details>
+
+<details>
+	<summary>CL-000008 (The Quality Assurance Update (Part 1))</summary>
 
 	- Made the following changes: 
 		- Fixed transparencies on the keyboard keys in the Controls menu 
