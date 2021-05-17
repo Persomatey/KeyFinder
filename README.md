@@ -40,7 +40,7 @@ https://trello.com/b/rSKdAI03/project-praeter
 - [ZapSplat](https://www.zapsplat.com/)
 - [VGcomposer](https://assetstore.unity.com/publishers/27795)
 - [MGWSoundDesign](https://assetstore.unity.com/publishers/27115)
-- [InspectorJ Sound Effects](https://assetstore.unity.com/publishers/38635) playerAttack1-2 or - [ShapeForms](https://assetstore.unity.com/publishers/40210)
+- [InspectorJ Sound Effects](https://assetstore.unity.com/publishers/38635)
 
 ## Changelist 
 
