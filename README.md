@@ -6,43 +6,52 @@ https://persomatey.itch.io/key-finder
 
 ![Image of KF](https://raw.githubusercontent.com/Persomatey/KeyFinder/main/GraphicArt/KeyFinderGraphicArt-Website.png)
 
-## Specs
+## Details
 
-Unreal Engine 4.25.4
+<details>
+	<summary>Specs</summary>
 
-SLN solution in Visual Studio Community 2019 Preview 
-https://visualstudio.microsoft.com/vs/community/
+	Unreal Engine 4.25.4
 
-Trello board: 
-https://trello.com/b/rSKdAI03/project-praeter
+	SLN solution in Visual Studio Community 2019 Preview 
+	https://visualstudio.microsoft.com/vs/community/
 
-## Credits 
+	Trello board: 
+	https://trello.com/b/rSKdAI03/key-finder
+	
+</details>
 
-**Programming**
-- [Hunter Goodin](https://huntergoodin.com/)
+<details>
+	<summary>Credits</summary>
 
-**Art**
-- [Hunter Goodin](https://huntergoodin.com/)
-- [rvros](https://rvros.itch.io/)
-- [Trixie](https://trixelized.itch.io/)
-- [Comixtrash](https://comixtrash.itch.io/) 
-- [kaleb-silva](https://www.freepik.com/kaleb-silva) 
+	**Programming**
+	- [Hunter Goodin](https://huntergoodin.com/)
 
-**Animation**
-- [rvros](https://rvros.itch.io/)
+	**Art**
+	- [Hunter Goodin](https://huntergoodin.com/)
+	- [rvros](https://rvros.itch.io/)
+	- [Trixie](https://trixelized.itch.io/)
+	- [Comixtrash](https://comixtrash.itch.io/) 
+	- [kaleb-silva](https://www.freepik.com/kaleb-silva) 
 
-**Music**
-- [VGcomposer](https://assetstore.unity.com/publishers/27795)
+	**Animation**
+	- [rvros](https://rvros.itch.io/)
 
-**SFX**
-- [Hunter Goodin](https://huntergoodin.com/)
-- [Chris M Audio](https://assetstore.unity.com/publishers/4861)
-- [ZapSplat](https://www.zapsplat.com/)
-- [VGcomposer](https://assetstore.unity.com/publishers/27795)
-- [MGWSoundDesign](https://assetstore.unity.com/publishers/27115)
-- [InspectorJ Sound Effects](https://assetstore.unity.com/publishers/38635)
+	**Music**
+	- [VGcomposer](https://assetstore.unity.com/publishers/27795)
 
-## Changelist 
+	**SFX**
+	- [Hunter Goodin](https://huntergoodin.com/)
+	- [Chris M Audio](https://assetstore.unity.com/publishers/4861)
+	- [ZapSplat](https://www.zapsplat.com/)
+	- [VGcomposer](https://assetstore.unity.com/publishers/27795)
+	- [MGWSoundDesign](https://assetstore.unity.com/publishers/27115)
+	- [InspectorJ Sound Effects](https://assetstore.unity.com/publishers/38635)
+
+</details>
+	
+<details>
+	<summary>Change List</summary><blockquote>
 
 <details>
 	<summary>CL-000009 (The Quality Assurance Update (Part 2))</summary>
@@ -208,7 +217,7 @@ https://trello.com/b/rSKdAI03/project-praeter
 
 
 <details>
-	<summary>CL-000000 (First!) </summary>
+	<summary>CL-000000 (The First Update) </summary>
 
 	- Made the following changes: 
 		- Added The base project 
@@ -230,3 +239,4 @@ https://trello.com/b/rSKdAI03/project-praeter
 		- Edited the README to reflect the above changes
 
 </details>
+</blockquote></details>
