@@ -14,7 +14,7 @@ https://persomatey.itch.io/key-finder
 	Unreal Engine 4.25.4
 
 	SLN solution in Visual Studio Community 2019 Preview 
-	https://visualstudio.microsoft.com/vs/community/
+	https://visualstudio.microsoft.com/vs/community/https://visualstudio.microsoft.com/vs/community/
 
 	Trello board: 
 	https://trello.com/b/rSKdAI03/key-finder
