@@ -4,7 +4,7 @@
 
 https://persomatey.itch.io/key-finder
 
-![Image of KF](https://raw.githubusercontent.com/Persomatey/KeyFinder/main/GraphicArt/KeyFinderGraphicArt-Website.png)
+<img src="https://raw.githubusercontent.com/Persomatey/KeyFinder/main/GraphicArt/KeyFinderGraphicArt-Website.png" width="347" height="331" />
 
 ## Details
 
